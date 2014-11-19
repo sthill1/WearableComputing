@@ -31,8 +31,8 @@ The `run_analysis.R` is the script that runs this analysis.
 
 The result of the execution are two files as follows:
 
-`sensor.txt` - stores a full version of the tidy dataset
-`sensor_avg_by_act_sub.txt` - stores a summarized version of the dataset which includes the mean of each columnb by activity and subject.
+*`sensor.txt` - stores a full version of the tidy dataset
+*`sensor_avg_by_act_sub.txt` - stores a summarized version of the dataset which includes the mean of each columnb by activity and subject.
 
 
 ## Dependencies
