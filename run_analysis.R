@@ -89,9 +89,6 @@ names(fix_activity) <- gsub('Gyro',"AngularSpeed.",names(fix_activity))
 names(fix_activity) <- gsub('\\.mean',".Mean",names(fix_activity))
 names(fix_activity) <- gsub('\\.std',".StandardDeviation",names(fix_activity))
 
-## Create an full tidy data set
-write.table(fix_activity, file = "sensor.txt", row.names=FALSE)
-
 ## Create an independent tidy data set with the average of each variable by activity and subject.
 fix_activity_sub = ddply(fix_activity, c("ActivityName","Subject"), numcolwise(mean))
 write.table(fix_activity_sub, file = "sensor_avg_by_act_sub.txt", row.names=FALSE)
